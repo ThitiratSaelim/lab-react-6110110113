@@ -4,7 +4,6 @@ export default function CharacterCard(props){
     
     const [active, setActive] = useState(false);
     const attemptRef = useRef(props.attempt);
-    
     const activate = () => {
         if(!active){
             setActive(true)
