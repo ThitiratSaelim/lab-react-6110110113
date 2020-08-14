@@ -52,7 +52,6 @@ center {
   color: white;
   padding: 16px 32px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
@@ -80,4 +79,18 @@ center {
 .button2:hover {
   background-color: #008CBA;
   color: white;
+}
+
+.activeText {
+  margin-left: 7em;
+  display: inline-block;
+  text-align: end;
+  font-size: 40px;
+  color:rgb(255, 255, 0);
+  text-shadow: 2px 2px #0c0101;
+  background-color: white;
+  border: 2px solid orange;
+  padding-left: 1em;
+  padding-right: 1em;
+  align-items: center;
 }

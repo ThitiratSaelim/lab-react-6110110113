@@ -1,8 +1,8 @@
-import React, { useState, Component } from 'react';
+import React, { useState } from 'react';
 import _ from 'lodash';
-
 import CharacterCard from './CharacterCard';
 
+var text;
 const prepareStateFromWord = (given_word) => {
     let word = given_word.toUpperCase()
     let chars = _.shuffle(Array.from(word))
@@ -18,12 +18,12 @@ const prepareStateFromWord = (given_word) => {
 export default function WordCard(props) {
 
     const [state, setState] = useState(prepareStateFromWord(props.value))
- 
     
     const activationHandler = (c) => {
         console.log(`${c} has been activated.`)
 
         let guess = state.guess + c
+        text = guess
         setState({...state, guess})
 
         if(guess.length == state.word.length){
@@ -44,6 +44,7 @@ export default function WordCard(props) {
                     <CharacterCard value={c} key={i} activationHandler={activationHandler} attempt={state.attempt}/>
                 )
             }
+            <div className="activeText">{text}</div>
         </div>
     )
 }
