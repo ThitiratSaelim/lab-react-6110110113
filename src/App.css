@@ -4,7 +4,7 @@
   width: 3em;
   font-size: 2em;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin: 1em;
+  margin: 0.75em;
   user-select: none;
   background-color: aquamarine;
   
@@ -42,6 +42,13 @@ h1 {
   text-shadow: 2px 2px #0c0101;
 }
 
+h2 {
+  text-align: left;
+  font-size: 20px;
+  color: black;
+  margin-left: 1em;
+}
+
 center {
   background-size: 500px,100px;
   background-image: url("https://thumbs.dreamstime.com/b/gamepad-joystick-game-controller-seamless-pattern-devices-video-games-esports-gamer-white-background-hand-drawn-vector-148103896.jpg");
@@ -57,34 +64,25 @@ center {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  margin-left: 1em;
 }
 
 .button1 {
   background-color: white;
   color: black;
   border: 2px solid #4CAF50;
+  ;
 }
 
 .button1:hover {
   background-color: #4CAF50;
   color: white;
-}
-
-.button2 {
-  background-color: white;
-  color: black;
-  border: 2px solid #008CBA;
-}
-
-.button2:hover {
-  background-color: #008CBA;
-  color: white;
+ 
 }
 
 .activeText {
-  margin-left: 7em;
-  display: inline-block;
-  text-align: end;
+  margin-left: 2em;
+  display: inline-flex;
   font-size: 40px;
   color:rgb(255, 255, 0);
   text-shadow: 2px 2px #0c0101;
@@ -92,5 +90,4 @@ center {
   border: 2px solid orange;
   padding-left: 1em;
   padding-right: 1em;
-  align-items: center;
 }
