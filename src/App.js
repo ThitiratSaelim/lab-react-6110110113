@@ -25,15 +25,22 @@ function App() {
   else if(rand == 6){
     word = "Depart";
   }
+
   return (
     <body>
       
+<script>
+
+</script>
       <center><br></br><h1>Welcome to Game!</h1><br></br></center>
       <h2>Click the random button to change question!</h2>
       <button className="button button1"><a href="http://localhost:3000/" >Random</a></button>
+      <button onclick="myFunction()" className="button button2">Answer</button>
+      <h2>Arrange the correct words</h2>
+      
       <div>
+        
         <WordCard value={word}/>
-       
       </div> 
       
     </body>
@@ -41,4 +48,6 @@ function App() {
 }
 
 export default App;
+
+
 
