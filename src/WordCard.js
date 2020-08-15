@@ -4,6 +4,7 @@ import CharacterCard from './CharacterCard';
 
 var text;
 var win;
+
 const prepareStateFromWord = (given_word) => {
     let word = given_word.toUpperCase()
     let chars = _.shuffle(Array.from(word))
@@ -31,11 +32,11 @@ export default function WordCard(props) {
             if(guess == state.word){
                 console.log('yeah!')
                 setState({...state, guess: '', completed: true})
-                win="You win";
+                win="Excellent! You win";
             }else{
                 console.log('reset, next attempt')
                 setState({...state, guess: '', attempt: state.attempt + 1})
-                win="Try Again";
+                win="Please Try Again";
                 
             }
         }
@@ -53,5 +54,3 @@ export default function WordCard(props) {
         </div>
     )
 }
-
-

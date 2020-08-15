@@ -28,26 +28,20 @@ function App() {
 
   return (
     <body>
-      
-<script>
-
-</script>
       <center><br></br><h1>Welcome to Game!</h1><br></br></center>
       <h2>Click the random button to change question!</h2>
       <button className="button button1"><a href="http://localhost:3000/" >Random</a></button>
-      <button onclick="myFunction()" className="button button2">Answer</button>
+      <button className="button button2" onClick={() => answer(word)}>Answer</button>
       <h2>Arrange the correct words</h2>
-      
       <div>
-        
         <WordCard value={word}/>
       </div> 
       
     </body>
   );
 }
-
 export default App;
 
-
-
+function answer(word){
+  alert("The answer is "+word)
+}
