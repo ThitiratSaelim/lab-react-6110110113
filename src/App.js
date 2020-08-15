@@ -32,7 +32,7 @@ function App() {
       <h2>Click the random button to change question!</h2>
       <button className="button button1"><a href="http://localhost:3000/" >Random</a></button>
       <button className="button button2" onClick={() => answer(word)}>Answer</button>
-      <h2>Arrange the correct words</h2>
+      <h2>Rearrange characters for correctly order</h2>
       <div>
         <WordCard value={word}/>
       </div> 

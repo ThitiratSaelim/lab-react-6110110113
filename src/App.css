@@ -4,7 +4,7 @@
   width: 3em;
   font-size: 2em;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin: 0.75em;
+  margin: 0.7em;
   user-select: none;
   background-color: aquamarine;
   
@@ -13,20 +13,6 @@
 .activeCard {
   color: red;
   background:black;
-}
-
-picture{
-  display: inline-block;
-  text-align: center;
-  font-size: 2em;
-  background-color: grey;
-  width: 450px;
-  height: 450px;
-}
-
-.pictureCard {
-  background-image:url("https://is5-ssl.mzstatic.com/image/thumb/Purple111/v4/8a/84/3d/8a843d9f-4220-7436-fdd3-d3d1fb33b4d2/source/512x512bb.jpg");
-  background-size: auto;
 }
 
 body {
@@ -68,25 +54,26 @@ center {
 }
 
 .button1 {
-  background-color: white;
-  color: black;
-  border: 2px solid #4CAF50;
+  background-color:  rgb(47, 255, 47);
+  color: white;
 }
 
 .button1:hover {
-  background-color: #4CAF50;
-  color: white;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(47, 255, 47);
 }
 
 .button2 {
-  background-color: white;
-  color: black;
-  border: 2px solid red;
+  background-color: red;
+  color: white;
 }
 
 .button2:hover {
-  background-color: red;
-  color: white;
+  background-color: white;
+  color: black;
+  border: 2px solid red;
 }
 
 .activeText {
@@ -104,11 +91,10 @@ center {
 .activeText2 {
   display: flow-root;
   margin-top: 5em;
-  font-size: 40px;
+  font-size: 42px;
   text-align: center;
   color:aqua;
   text-shadow: 2px 2px #0c0101;
   background-color: cornsilk;
   
 }
-
